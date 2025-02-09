@@ -1,0 +1,574 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motivational Hub</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    h1 {
+      background-color: #6200ea;
+      color: white;
+      padding: 1rem;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      text-align: left;
+      position: relative;
+    }
+    .quote-text {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 15px;
+    }
+    .share-button {
+      background-color: #6200ea;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
+    }
+    .share-button:hover {
+      background-color: #3700b3;
+    }
+  </style>
+  <script>
+    function shareQuote(quote) {
+      if (navigator.share) {
+        navigator.share({
+          title: 'Motivational Hub',
+          text: quote
+        }).catch((error) => console.error('Error sharing', error));
+      } else {
+        alert('Sharing not supported on this browser.');
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Motivational Hub</h1>
+  <div class="card-container">
+
+    <div class="card">
+      <p class="quote-text">Believe you can and you're halfway there.</p>
+      <button class="share-button" onclick="shareQuote('Believe you can and you're halfway there.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Success is not final; failure is not fatal: It is the courage to continue that counts.</p>
+      <button class="share-button" onclick="shareQuote('Success is not final; failure is not fatal: It is the courage to continue that counts.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Don't watch the clock; do what it does. Keep going.</p>
+      <button class="share-button" onclick="shareQuote('Don't watch the clock; do what it does. Keep going.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">The future belongs to those who believe in the beauty of their dreams.</p>
+      <button class="share-button" onclick="shareQuote('The future belongs to those who believe in the beauty of their dreams.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Hard times may have held you down, but they will not last forever. When all is said and done, you will be increased.</p>
+      <button class="share-button" onclick="shareQuote('Hard times may have held you down, but they will not last forever. When all is said and done, you will be increased.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">If opportunity doesn’t knock, build a door.</p>
+      <button class="share-button" onclick="shareQuote('If opportunity doesn’t knock, build a door.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">The only way to achieve the impossible is to believe it is possible.</p>
+      <button class="share-button" onclick="shareQuote('The only way to achieve the impossible is to believe it is possible.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Action is the foundational key to all success.</p>
+      <button class="share-button" onclick="shareQuote('Action is the foundational key to all success.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">What lies behind us and what lies before us are tiny matters compared to what lies within us.</p>
+      <button class="share-button" onclick="shareQuote('What lies behind us and what lies before us are tiny matters compared to what lies within us.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">It always seems impossible until it's done.</p>
+      <button class="share-button" onclick="shareQuote('It always seems impossible until it's done.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Believe you can and you're halfway there.</p>
+      <button class="share-button" onclick="shareQuote('Believe you can and you're halfway there.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Success is not final; failure is not fatal: It is the courage to continue that counts.</p>
+      <button class="share-button" onclick="shareQuote('Success is not final; failure is not fatal: It is the courage to continue that counts.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Don't watch the clock; do what it does. Keep going.</p>
+      <button class="share-button" onclick="shareQuote('Don't watch the clock; do what it does. Keep going.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">The future belongs to those who believe in the beauty of their dreams.</p>
+      <button class="share-button" onclick="shareQuote('The future belongs to those who believe in the beauty of their dreams.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Hard times may have held you down, but they will not last forever. When all is said and done, you will be increased.</p>
+      <button class="share-button" onclick="shareQuote('Hard times may have held you down, but they will not last forever. When all is said and done, you will be increased.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">If opportunity doesn’t knock, build a door.</p>
+      <button class="share-button" onclick="shareQuote('If opportunity doesn’t knock, build a door.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">The only way to achieve the impossible is to believe it is possible.</p>
+      <button class="share-button" onclick="shareQuote('The only way to achieve the impossible is to believe it is possible.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Action is the foundational key to all success.</p>
+      <button class="share-button" onclick="shareQuote('Action is the foundational key to all success.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">What lies behind us and what lies before us are tiny matters compared to what lies within us.</p>
+      <button class="share-button" onclick="shareQuote('What lies behind us and what lies before us are tiny matters compared to what lies within us.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">It always seems impossible until it's done.</p>
+      <button class="share-button" onclick="shareQuote('It always seems impossible until it's done.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Believe you can and you're halfway there.</p>
+      <button class="share-button" onclick="shareQuote('Believe you can and you're halfway there.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Success is not final; failure is not fatal: It is the courage to continue that counts.</p>
+      <button class="share-button" onclick="shareQuote('Success is not final; failure is not fatal: It is the courage to continue that counts.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Don't watch the clock; do what it does. Keep going.</p>
+      <button class="share-button" onclick="shareQuote('Don't watch the clock; do what it does. Keep going.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">The future belongs to those who believe in the beauty of their dreams.</p>
+      <button class="share-button" onclick="shareQuote('The future belongs to those who believe in the beauty of their dreams.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Hard times may have held you down, but they will not last forever. When all is said and done, you will be increased.</p>
+      <button class="share-button" onclick="shareQuote('Hard times may have held you down, but they will not last forever. When all is said and done, you will be increased.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">If opportunity doesn’t knock, build a door.</p>
+      <button class="share-button" onclick="shareQuote('If opportunity doesn’t knock, build a door.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">The only way to achieve the impossible is to believe it is possible.</p>
+      <button class="share-button" onclick="shareQuote('The only way to achieve the impossible is to believe it is possible.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Action is the foundational key to all success.</p>
+      <button class="share-button" onclick="shareQuote('Action is the foundational key to all success.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">What lies behind us and what lies before us are tiny matters compared to what lies within us.</p>
+      <button class="share-button" onclick="shareQuote('What lies behind us and what lies before us are tiny matters compared to what lies within us.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">It always seems impossible until it's done.</p>
+      <button class="share-button" onclick="shareQuote('It always seems impossible until it's done.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Believe you can and you're halfway there.</p>
+      <button class="share-button" onclick="shareQuote('Believe you can and you're halfway there.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Success is not final; failure is not fatal: It is the courage to continue that counts.</p>
+      <button class="share-button" onclick="shareQuote('Success is not final; failure is not fatal: It is the courage to continue that counts.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Don't watch the clock; do what it does. Keep going.</p>
+      <button class="share-button" onclick="shareQuote('Don't watch the clock; do what it does. Keep going.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">The future belongs to those who believe in the beauty of their dreams.</p>
+      <button class="share-button" onclick="shareQuote('The future belongs to those who believe in the beauty of their dreams.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Hard times may have held you down, but they will not last forever. When all is said and done, you will be increased.</p>
+      <button class="share-button" onclick="shareQuote('Hard times may have held you down, but they will not last forever. When all is said and done, you will be increased.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">If opportunity doesn’t knock, build a door.</p>
+      <button class="share-button" onclick="shareQuote('If opportunity doesn’t knock, build a door.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">The only way to achieve the impossible is to believe it is possible.</p>
+      <button class="share-button" onclick="shareQuote('The only way to achieve the impossible is to believe it is possible.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Action is the foundational key to all success.</p>
+      <button class="share-button" onclick="shareQuote('Action is the foundational key to all success.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">What lies behind us and what lies before us are tiny matters compared to what lies within us.</p>
+      <button class="share-button" onclick="shareQuote('What lies behind us and what lies before us are tiny matters compared to what lies within us.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">It always seems impossible until it's done.</p>
+      <button class="share-button" onclick="shareQuote('It always seems impossible until it's done.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Believe you can and you're halfway there.</p>
+      <button class="share-button" onclick="shareQuote('Believe you can and you're halfway there.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Success is not final; failure is not fatal: It is the courage to continue that counts.</p>
+      <button class="share-button" onclick="shareQuote('Success is not final; failure is not fatal: It is the courage to continue that counts.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Don't watch the clock; do what it does. Keep going.</p>
+      <button class="share-button" onclick="shareQuote('Don't watch the clock; do what it does. Keep going.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">The future belongs to those who believe in the beauty of their dreams.</p>
+      <button class="share-button" onclick="shareQuote('The future belongs to those who believe in the beauty of their dreams.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Hard times may have held you down, but they will not last forever. When all is said and done, you will be increased.</p>
+      <button class="share-button" onclick="shareQuote('Hard times may have held you down, but they will not last forever. When all is said and done, you will be increased.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">If opportunity doesn’t knock, build a door.</p>
+      <button class="share-button" onclick="shareQuote('If opportunity doesn’t knock, build a door.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">The only way to achieve the impossible is to believe it is possible.</p>
+      <button class="share-button" onclick="shareQuote('The only way to achieve the impossible is to believe it is possible.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Action is the foundational key to all success.</p>
+      <button class="share-button" onclick="shareQuote('Action is the foundational key to all success.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">What lies behind us and what lies before us are tiny matters compared to what lies within us.</p>
+      <button class="share-button" onclick="shareQuote('What lies behind us and what lies before us are tiny matters compared to what lies within us.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">It always seems impossible until it's done.</p>
+      <button class="share-button" onclick="shareQuote('It always seems impossible until it's done.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Believe you can and you're halfway there.</p>
+      <button class="share-button" onclick="shareQuote('Believe you can and you're halfway there.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Success is not final; failure is not fatal: It is the courage to continue that counts.</p>
+      <button class="share-button" onclick="shareQuote('Success is not final; failure is not fatal: It is the courage to continue that counts.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Don't watch the clock; do what it does. Keep going.</p>
+      <button class="share-button" onclick="shareQuote('Don't watch the clock; do what it does. Keep going.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">The future belongs to those who believe in the beauty of their dreams.</p>
+      <button class="share-button" onclick="shareQuote('The future belongs to those who believe in the beauty of their dreams.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Hard times may have held you down, but they will not last forever. When all is said and done, you will be increased.</p>
+      <button class="share-button" onclick="shareQuote('Hard times may have held you down, but they will not last forever. When all is said and done, you will be increased.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">If opportunity doesn’t knock, build a door.</p>
+      <button class="share-button" onclick="shareQuote('If opportunity doesn’t knock, build a door.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">The only way to achieve the impossible is to believe it is possible.</p>
+      <button class="share-button" onclick="shareQuote('The only way to achieve the impossible is to believe it is possible.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Action is the foundational key to all success.</p>
+      <button class="share-button" onclick="shareQuote('Action is the foundational key to all success.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">What lies behind us and what lies before us are tiny matters compared to what lies within us.</p>
+      <button class="share-button" onclick="shareQuote('What lies behind us and what lies before us are tiny matters compared to what lies within us.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">It always seems impossible until it's done.</p>
+      <button class="share-button" onclick="shareQuote('It always seems impossible until it's done.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Believe you can and you're halfway there.</p>
+      <button class="share-button" onclick="shareQuote('Believe you can and you're halfway there.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Success is not final; failure is not fatal: It is the courage to continue that counts.</p>
+      <button class="share-button" onclick="shareQuote('Success is not final; failure is not fatal: It is the courage to continue that counts.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Don't watch the clock; do what it does. Keep going.</p>
+      <button class="share-button" onclick="shareQuote('Don't watch the clock; do what it does. Keep going.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">The future belongs to those who believe in the beauty of their dreams.</p>
+      <button class="share-button" onclick="shareQuote('The future belongs to those who believe in the beauty of their dreams.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Hard times may have held you down, but they will not last forever. When all is said and done, you will be increased.</p>
+      <button class="share-button" onclick="shareQuote('Hard times may have held you down, but they will not last forever. When all is said and done, you will be increased.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">If opportunity doesn’t knock, build a door.</p>
+      <button class="share-button" onclick="shareQuote('If opportunity doesn’t knock, build a door.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">The only way to achieve the impossible is to believe it is possible.</p>
+      <button class="share-button" onclick="shareQuote('The only way to achieve the impossible is to believe it is possible.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Action is the foundational key to all success.</p>
+      <button class="share-button" onclick="shareQuote('Action is the foundational key to all success.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">What lies behind us and what lies before us are tiny matters compared to what lies within us.</p>
+      <button class="share-button" onclick="shareQuote('What lies behind us and what lies before us are tiny matters compared to what lies within us.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">It always seems impossible until it's done.</p>
+      <button class="share-button" onclick="shareQuote('It always seems impossible until it's done.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Believe you can and you're halfway there.</p>
+      <button class="share-button" onclick="shareQuote('Believe you can and you're halfway there.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Success is not final; failure is not fatal: It is the courage to continue that counts.</p>
+      <button class="share-button" onclick="shareQuote('Success is not final; failure is not fatal: It is the courage to continue that counts.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Don't watch the clock; do what it does. Keep going.</p>
+      <button class="share-button" onclick="shareQuote('Don't watch the clock; do what it does. Keep going.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">The future belongs to those who believe in the beauty of their dreams.</p>
+      <button class="share-button" onclick="shareQuote('The future belongs to those who believe in the beauty of their dreams.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Hard times may have held you down, but they will not last forever. When all is said and done, you will be increased.</p>
+      <button class="share-button" onclick="shareQuote('Hard times may have held you down, but they will not last forever. When all is said and done, you will be increased.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">If opportunity doesn’t knock, build a door.</p>
+      <button class="share-button" onclick="shareQuote('If opportunity doesn’t knock, build a door.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">The only way to achieve the impossible is to believe it is possible.</p>
+      <button class="share-button" onclick="shareQuote('The only way to achieve the impossible is to believe it is possible.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Action is the foundational key to all success.</p>
+      <button class="share-button" onclick="shareQuote('Action is the foundational key to all success.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">What lies behind us and what lies before us are tiny matters compared to what lies within us.</p>
+      <button class="share-button" onclick="shareQuote('What lies behind us and what lies before us are tiny matters compared to what lies within us.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">It always seems impossible until it's done.</p>
+      <button class="share-button" onclick="shareQuote('It always seems impossible until it's done.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Believe you can and you're halfway there.</p>
+      <button class="share-button" onclick="shareQuote('Believe you can and you're halfway there.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Success is not final; failure is not fatal: It is the courage to continue that counts.</p>
+      <button class="share-button" onclick="shareQuote('Success is not final; failure is not fatal: It is the courage to continue that counts.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Don't watch the clock; do what it does. Keep going.</p>
+      <button class="share-button" onclick="shareQuote('Don't watch the clock; do what it does. Keep going.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">The future belongs to those who believe in the beauty of their dreams.</p>
+      <button class="share-button" onclick="shareQuote('The future belongs to those who believe in the beauty of their dreams.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Hard times may have held you down, but they will not last forever. When all is said and done, you will be increased.</p>
+      <button class="share-button" onclick="shareQuote('Hard times may have held you down, but they will not last forever. When all is said and done, you will be increased.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">If opportunity doesn’t knock, build a door.</p>
+      <button class="share-button" onclick="shareQuote('If opportunity doesn’t knock, build a door.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">The only way to achieve the impossible is to believe it is possible.</p>
+      <button class="share-button" onclick="shareQuote('The only way to achieve the impossible is to believe it is possible.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Action is the foundational key to all success.</p>
+      <button class="share-button" onclick="shareQuote('Action is the foundational key to all success.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">What lies behind us and what lies before us are tiny matters compared to what lies within us.</p>
+      <button class="share-button" onclick="shareQuote('What lies behind us and what lies before us are tiny matters compared to what lies within us.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">It always seems impossible until it's done.</p>
+      <button class="share-button" onclick="shareQuote('It always seems impossible until it's done.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Believe you can and you're halfway there.</p>
+      <button class="share-button" onclick="shareQuote('Believe you can and you're halfway there.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Success is not final; failure is not fatal: It is the courage to continue that counts.</p>
+      <button class="share-button" onclick="shareQuote('Success is not final; failure is not fatal: It is the courage to continue that counts.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Don't watch the clock; do what it does. Keep going.</p>
+      <button class="share-button" onclick="shareQuote('Don't watch the clock; do what it does. Keep going.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">The future belongs to those who believe in the beauty of their dreams.</p>
+      <button class="share-button" onclick="shareQuote('The future belongs to those who believe in the beauty of their dreams.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Hard times may have held you down, but they will not last forever. When all is said and done, you will be increased.</p>
+      <button class="share-button" onclick="shareQuote('Hard times may have held you down, but they will not last forever. When all is said and done, you will be increased.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">If opportunity doesn’t knock, build a door.</p>
+      <button class="share-button" onclick="shareQuote('If opportunity doesn’t knock, build a door.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">The only way to achieve the impossible is to believe it is possible.</p>
+      <button class="share-button" onclick="shareQuote('The only way to achieve the impossible is to believe it is possible.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">Action is the foundational key to all success.</p>
+      <button class="share-button" onclick="shareQuote('Action is the foundational key to all success.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">What lies behind us and what lies before us are tiny matters compared to what lies within us.</p>
+      <button class="share-button" onclick="shareQuote('What lies behind us and what lies before us are tiny matters compared to what lies within us.')">Share</button>
+    </div>
+    
+    <div class="card">
+      <p class="quote-text">It always seems impossible until it's done.</p>
+      <button class="share-button" onclick="shareQuote('It always seems impossible until it's done.')">Share</button>
+    </div>
+    
+  </div>
+</body>
+</html>
